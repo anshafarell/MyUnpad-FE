@@ -11,8 +11,17 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.myunpadsplashscreen.ui.theme.MyUnpadSplashScreenTheme
+import android.content.Intent
+import android.view.View
+import android.widget.Button
 
-class MainActivity : ComponentActivity() {
+//import kotlin.time.Duration.Companion.minutes
+
+
+
+class MainActivity : ComponentActivity(), View.OnClickListener {
+    private lateinit var btnIntent : Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 //        setContent {
@@ -26,7 +35,25 @@ class MainActivity : ComponentActivity() {
 //                }
 //            }
 //        }
+
         setContentView(R.layout.activity_main)
+
+        btnIntent = findViewById(R.id.btn_intent)
+
+        btnIntent.setOnClickListener(this)
+
+        // Untuk ganti activity
+//        val gotoOnboarding = Intent(this@MainActivity, onboarding::class.java)
+//        startActivity(gotoOnboarding)
+    }
+
+    override fun onClick(v: View) {
+        when(v.id){
+            R.id.btn_intent->{
+                val intentBiasa = Intent(this@MainActivity, ContinueWGoogle::class.java)
+                startActivity(intentBiasa)
+            }
+        }
     }
 }
 
