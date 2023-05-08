@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pengaturan">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="137dp"
+        android:layout_height="36dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Pengaturan"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="111dp" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Program Studi"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="233dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fakultas"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kampus"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="196dp"
+        android:layout_height="44dp"
+        android:backgroundTint="#FF0000"
+        android:text="Keluar"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="649dp" />
+
+    <ImageButton
+        android:id="@+id/beranda_button"
+        android:layout_width="65dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:scaleX="1"
+        app:srcCompat="@drawable/beranda_icon"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="716dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="50dp"
+        android:layout_height="63dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/profil_icon"
+        tools:layout_editor_absoluteX="233dp"
+        tools:layout_editor_absoluteY="716dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/add_icon"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="716dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kontak (opsional)"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preferensi Notifikasi"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:background="#EAEAEA"
+        android:padding="5dp"
+        android:text="0123456789"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:background="#EAEAEA"
+        android:padding="5dp"
+        android:text="Nama saya adalah Budi!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bio (opsional)"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="139dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/back_button"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
