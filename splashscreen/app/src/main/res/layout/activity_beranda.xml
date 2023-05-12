@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".Beranda">
 
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        tools:layout_editor_absoluteX="93dp"-->
+    <!--        tools:layout_editor_absoluteY="45dp">-->
+
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
@@ -13,7 +19,53 @@
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/bg"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="3dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="230dp"
+        android:layout_height="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="90dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="90dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="230dp"
+        android:layout_height="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="90dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -75,9 +127,12 @@
         android:id="@+id/imageButton2"
         android:layout_width="323dp"
         android:layout_height="341dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/gambarpost_3"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="115dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -85,38 +140,76 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/bottombar"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="721dp" />
+        tools:layout_editor_absoluteY="724dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="230dp"
+        android:layout_height="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="90dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="395dp"
+        android:layout_height="59dp"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        android:foregroundTint="#FFFFFF"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="729dp" />
 
     <ImageButton
-        android:id="@+id/imageButton27"
+        android:id="@+id/imageButton19"
         android:layout_width="60dp"
         android:layout_height="57dp"
         android:layout_marginBottom="4dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:srcCompat="@drawable/add_icon"
-        tools:layout_editor_absoluteX="166dp" />
+        app:layout_constraintStart_toEndOf="@+id/beranda_button3"
+        app:layout_constraintTop_toTopOf="@+id/beranda_button3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/add_icon" />
 
     <ImageButton
-        android:id="@+id/imageButton26"
+        android:id="@+id/imageButton16"
         android:layout_width="50dp"
         android:layout_height="63dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/profil_icon"
-        tools:layout_editor_absoluteX="226dp"
-        tools:layout_editor_absoluteY="727dp" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton19"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:srcCompat="@drawable/profil_icon" />
 
     <ImageButton
-        android:id="@+id/beranda_button10"
+        android:id="@+id/beranda_button3"
         android:layout_width="65dp"
         android:layout_height="64dp"
+        android:layout_marginStart="100dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitXY"
         android:scaleX="1"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
         app:srcCompat="@drawable/beranda_icon"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="727dp" />
+        tools:layout_editor_absoluteY="724dp" />
+
+    <!--    </ScrollView>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
