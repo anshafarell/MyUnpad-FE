@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Beranda">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bg"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:srcCompat="@drawable/searchbar" />
+
+    <EditText
+        android:id="@+id/editTextText6"
+        android:layout_width="189dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#00655F5F"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Search"
+        android:textColor="#C2C2C2"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="69dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FEFEFE"
+        android:shadowColor="#0C1357"
+        android:text="Kampus"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#FEFEFE"
+        android:shadowColor="#0C1357"
+        android:text="fakultas"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FEFEFE"
+        android:shadowColor="#0C1357"
+        android:text="program studi"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="323dp"
+        android:layout_height="341dp"
+        android:background="@drawable/gambarpost_3"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bottombar"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="721dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton27"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/add_icon"
+        tools:layout_editor_absoluteX="166dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton26"
+        android:layout_width="50dp"
+        android:layout_height="63dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/profil_icon"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="727dp" />
+
+    <ImageButton
+        android:id="@+id/beranda_button10"
+        android:layout_width="65dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:scaleX="1"
+        app:srcCompat="@drawable/beranda_icon"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="727dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
