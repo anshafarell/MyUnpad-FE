@@ -150,7 +150,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/buttonTambahPost"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginBottom="16dp"
@@ -159,22 +159,22 @@
             tools:layout_editor_absoluteX="179dp" />
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/buttonBeranda"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginEnd="25dp"
             android:background="@drawable/beranda_icon"
-            app:layout_constraintBottom_toBottomOf="@+id/imageButton"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton" />
+            app:layout_constraintBottom_toBottomOf="@+id/buttonTambahPost"
+            app:layout_constraintEnd_toStartOf="@+id/buttonTambahPost" />
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/buttonProfil"
             android:layout_width="30dp"
             android:layout_height="50dp"
             android:layout_marginStart="30dp"
             android:background="@drawable/profile_icon_white"
-            app:layout_constraintBottom_toBottomOf="@+id/imageButton"
-            app:layout_constraintStart_toEndOf="@+id/imageButton" />
+            app:layout_constraintBottom_toBottomOf="@+id/buttonTambahPost"
+            app:layout_constraintStart_toEndOf="@+id/buttonTambahPost" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

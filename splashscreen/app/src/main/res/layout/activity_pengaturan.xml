@@ -7,7 +7,7 @@
     tools:context=".pengaturan">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textPengaturan"
         android:layout_width="137dp"
         android:layout_height="36dp"
         android:fontFamily="sans-serif-black"
@@ -86,7 +86,7 @@
         tools:layout_editor_absoluteY="716dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textKontak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kontak (opsional)"
@@ -95,7 +95,7 @@
         tools:layout_editor_absoluteY="187dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textPreferensi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Preferensi Notifikasi"
@@ -104,7 +104,7 @@
         tools:layout_editor_absoluteY="336dp" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/inputKontak"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
@@ -116,11 +116,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textKontak"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/inputBio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
@@ -132,11 +132,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textBio"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textBio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bio (opsional)"

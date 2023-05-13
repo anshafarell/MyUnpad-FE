@@ -192,7 +192,7 @@
         tools:layout_editor_absoluteY="361dp" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/inputKontak"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"

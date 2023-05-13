@@ -19,6 +19,9 @@
             android:name=".BuatPost"
             android:exported="false" />
         <activity
+            android:name=".EditPost"
+            android:exported="true"/>
+        <activity
             android:name=".ScrollTest"
             android:exported="false" />
         <activity
