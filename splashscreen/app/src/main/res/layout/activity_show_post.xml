@@ -10,191 +10,118 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:backgroundTint="#F9F9F9"
         tools:context=".ScrollTest">
 
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="Edit Post"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="24sp"
-            android:textStyle="bold"
+        <ImageButton
+            android:id="@+id/show_post_back"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="#F9F9F9"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_button"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.051"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:scaleX="1"
-            android:scaleY="1"
-            app:layout_constraintEnd_toStartOf="@+id/textView8"
-            app:layout_constraintHorizontal_bias="0.641"
+        <ImageButton
+            android:id="@+id/show_post_image"
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#F9F9F9"
+            android:scaleType="fitCenter"
+            android:src="@drawable/blank_rectangle_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7"
-            app:srcCompat="@drawable/blank_rectangle_gray" />
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Judul"
+            android:layout_marginTop="12dp"
+            android:text="Judul Post"
             android:textColor="#000000"
+            android:textSize="16sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.592"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+            app:layout_constraintStart_toStartOf="@+id/show_post_image"
+            app:layout_constraintTop_toBottomOf="@+id/show_post_back" />
+
+        <ImageButton
+            android:id="@+id/show_post_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#F9F9F9"
+            android:scaleType="fitCenter"
+            android:src="@drawable/blank_profile_pic"
+            app:layout_constraintStart_toStartOf="@+id/show_post_image"
+            app:layout_constraintTop_toBottomOf="@+id/show_post_image" />
 
         <TextView
-            android:id="@+id/textView10"
-            android:layout_width="160dp"
-            android:layout_height="131dp"
-            android:layout_marginTop="12dp"
-            android:text="Isi judul disini ..."
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/textView8"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="157dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="12dp"
-            android:backgroundTint="#D8D8D8"
-            android:text="Atur Gambar"
-            android:textSize="10sp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/textView10"
-            app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-        <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/show_post_published_by"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Deskripsi"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="4dp"
+            android:text="Dipublikasikan oleh:"
             android:textColor="#000000"
+            android:textSize="12sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/imageView3"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+            app:layout_constraintStart_toStartOf="@+id/show_post_image"
+            app:layout_constraintTop_toBottomOf="@+id/show_post_image" />
 
         <TextView
-            android:id="@+id/textView18"
-            android:layout_width="344dp"
-            android:layout_height="76dp"
-            android:layout_marginTop="12dp"
-            android:text="Tulis deskripsi disini ..."
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/textView17"
-            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+            android:id="@+id/show_post_publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Pemublikasi"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/show_post_image"
+            app:layout_constraintTop_toBottomOf="@+id/show_post_published_by" />
+
+        <ImageButton
+            android:id="@+id/show_post_bookmark"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#F9F9F9"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bookmark"
+            app:layout_constraintEnd_toEndOf="@+id/show_post_image"
+            app:layout_constraintTop_toBottomOf="@+id/show_post_image" />
 
         <TextView
-            android:id="@+id/textView19"
+            android:id="@+id/show_post_deskripsi_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="Pilih Kategori"
+            android:text="Deskripsi"
             android:textColor="#000000"
+            android:textSize="16sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/show_post_profile"
+            app:layout_constraintTop_toBottomOf="@+id/show_post_profile" />
+
+        <TextView
+            android:id="@+id/show_post_deskripsi"
+            android:layout_width="350dp"
+            android:layout_height="113dp"
+            android:text="Isi deskripsi ..."
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/show_post_image"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/textView18"
-            app:layout_constraintTop_toBottomOf="@+id/textView18" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="91dp"
-            android:layout_height="38dp"
-            android:layout_marginTop="12dp"
-            android:text="Kampus"
-            android:textColor="#FFFFFF"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@+id/textView19"
-            app:layout_constraintTop_toBottomOf="@+id/textView19" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="88dp"
-            android:layout_height="38dp"
-            android:layout_marginStart="10dp"
-            android:text="Fakultas"
-            android:textColor="#FFFFFF"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="@+id/button5"
-            app:layout_constraintStart_toEndOf="@+id/button5"
-            app:layout_constraintTop_toTopOf="@+id/button5" />
-
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="139dp"
-            android:layout_height="38dp"
-            android:layout_marginStart="10dp"
-            android:text="Program Studi"
-            android:textColor="#FFFFFF"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="@+id/button5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/button6"
-            app:layout_constraintTop_toTopOf="@+id/button6"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <ImageButton
-            android:id="@+id/buttonTambahPost"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/plus_icon_blue"
-            android:contentDescription="Tambah Post"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <ImageButton
-            android:id="@+id/buttonProfil"
-            android:layout_width="30dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="30dp"
-            android:background="@drawable/profile_icon_white"
-            android:contentDescription="Profil"
-            app:layout_constraintBottom_toBottomOf="@+id/buttonTambahPost"
-            app:layout_constraintStart_toEndOf="@+id/buttonTambahPost" />
-
-        <Button
-            android:id="@+id/hapuspost"
-            android:layout_width="155dp"
-            android:layout_height="46dp"
-            android:layout_marginTop="44dp"
-            android:backgroundTint="#FE3131"
-            android:text="Hapus Post"
-            android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="@+id/button7"
-            app:layout_constraintHorizontal_bias="0.508"
-            app:layout_constraintStart_toStartOf="@+id/button5"
-            app:layout_constraintTop_toBottomOf="@+id/button6" />
-
-        <ImageButton
-            android:id="@+id/buttonBeranda"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="25dp"
-            android:background="@drawable/beranda_icon"
-            android:contentDescription="Beranda"
-            app:layout_constraintBottom_toBottomOf="@+id/buttonTambahPost"
-            app:layout_constraintEnd_toStartOf="@+id/buttonTambahPost" />
-
+            app:layout_constraintStart_toStartOf="@+id/show_post_deskripsi_text"
+            app:layout_constraintTop_toBottomOf="@+id/show_post_deskripsi_text" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
