@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="409dp"
+    android:layout_height="729dp"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#F9F9F9"
+        tools:context=".ScrollTest">
+
+        <ImageButton
+            android:id="@+id/show_post_back"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="#F9F9F9"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.051"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/show_post_image"
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#F9F9F9"
+            android:scaleType="fitCenter"
+            android:src="@drawable/blank_rectangle_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Judul Post"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/show_post_image"
+            app:layout_constraintTop_toBottomOf="@+id/show_post_back" />
+
+        <ImageButton
+            android:id="@+id/show_post_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#F9F9F9"
+            android:scaleType="fitCenter"
+            android:src="@drawable/blank_profile_pic"
+            app:layout_constraintStart_toStartOf="@+id/show_post_image"
+            app:layout_constraintTop_toBottomOf="@+id/show_post_image" />
+
+        <TextView
+            android:id="@+id/show_post_published_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="4dp"
+            android:text="Dipublikasikan oleh:"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/show_post_image"
+            app:layout_constraintTop_toBottomOf="@+id/show_post_image" />
+
+        <TextView
+            android:id="@+id/show_post_publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Pemublikasi"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/show_post_image"
+            app:layout_constraintTop_toBottomOf="@+id/show_post_published_by" />
+
+        <ImageButton
+            android:id="@+id/show_post_bookmark"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#F9F9F9"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bookmark"
+            app:layout_constraintEnd_toEndOf="@+id/show_post_image"
+            app:layout_constraintTop_toBottomOf="@+id/show_post_image" />
+
+        <TextView
+            android:id="@+id/show_post_deskripsi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Deskripsi"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/show_post_profile"
+            app:layout_constraintTop_toBottomOf="@+id/show_post_profile" />
+
+        <TextView
+            android:id="@+id/show_post_deskripsi"
+            android:layout_width="350dp"
+            android:layout_height="113dp"
+            android:text="Isi deskripsi ..."
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/show_post_image"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/show_post_deskripsi_text"
+            app:layout_constraintTop_toBottomOf="@+id/show_post_deskripsi_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
