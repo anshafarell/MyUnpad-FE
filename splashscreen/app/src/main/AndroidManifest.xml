@@ -25,6 +25,9 @@
             android:name=".ShowPost"
             android:exported="true"/>
         <activity
+            android:name=".ProfilOrang"
+            android:exported="true"/>
+        <activity
             android:name=".ScrollTest"
             android:exported="false" />
         <activity
